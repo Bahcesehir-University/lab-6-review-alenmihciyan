@@ -67,7 +67,7 @@ public:
     // Print: "Student [name] destroyed"
     ~Student() {
         // YOUR CODE HERE
-        cout<<"Student"<<name<< "destroyed"<<endl;
+        cout<<"Student "<<name<< " destroyed"<<endl;
     }
 
     // ----- Task 2: Getters (Encapsulation) -----
@@ -148,7 +148,7 @@ public:
     // Example: "Student(Ali, ID: 101, GPA: 3.5)"
     friend ostream& operator<<(ostream& os, const Student& s) {
         // YOUR CODE HERE
-        os<<"Student("<<s.name<<", ID:"<< s.id<<", GPA:"<<s.gpa<<")";
+        os<< "Student("<<s.name<<", ID:"<< s.id<<", GPA:"<<s.gpa<<")";
         return os;
     }
 };
@@ -174,7 +174,7 @@ Student findBestStudent(Student arr[], int size) {
     
     for(int i = 1 ; i< size ; i++){
         if(best<arr[i]){
-            best = arr [i];
+            best = arr[i];
         }
     }
 return best;
